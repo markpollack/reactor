@@ -23,7 +23,7 @@ This should cause the submodules to be compiled and the tests to be run. To inst
 Snapshot Maven artifacts are provided in the SpringSource snapshot repositories. To add this repo to your Gradle build, specify the URL like the following:
 
     ext {
-      reactorVersion = '2.0.0.RELEASE'
+      reactorVersion = '2.0.1.RELEASE'
     }
 
     repositories {
@@ -36,10 +36,22 @@ Snapshot Maven artifacts are provided in the SpringSource snapshot repositories.
     dependencies {
       // Reactor Core
       compile 'io.projectreactor:reactor-core:$reactorVersion'
+
+      // Reactor Stream
+      // compile 'io.projectreactor:reactor-stream:$reactorVersion'
+
+
       // Reactor Groovy
-      //compile 'io.projectreactor:reactor-groovy:$reactorVersion'
+      // compile 'io.projectreactor:reactor-groovy:$reactorVersion'
+
       // Reactor Spring
-      //compile 'io.projectreactor:reactor-spring:$reactorVersion'
+      // compile 'io.projectreactor:reactor-spring:$reactorVersion'
+
+       // Reactor Net
+       // compile 'io.projectreactor:reactor-net:$reactorVersion'
+
+       // Netty for Reactor Net (auto detects if in classpath)
+       // compile 'io.netty:netty-all:4.0.27.Final'
     }
 
 
